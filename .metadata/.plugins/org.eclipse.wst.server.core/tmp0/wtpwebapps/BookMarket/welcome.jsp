@@ -8,21 +8,14 @@
 </head>
 <body>
 	<% 
-		String greeting = "Book Market Mall";
-		String tagline = "welcome to Book Market!"; 
+		String greeting = "도서 웹 쇼핑몰";
+		//String tagline = "Welcome to Book Market!"; 
 	%>
 	<!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
     	rel="stylesheet">
 <body>
-	<nav class="navbar navbar-expand navbar-dark bg-dark">
-		<div class="container">
-			<div class = "navbar-header">
-				<a class = "navbar-brand" href="./welcome.jsp">Home</a>
-			</div>
-		</div>
-	</nav>
-
+	<%@ include file="menu.jsp" %>
 	<div class = "jumbotron">
 		<div class = "container">
 			<h1 class = "display-3">
@@ -30,10 +23,6 @@
 			</h1>
 		</div>
 	</div>
-	<div class = "container">
-		<div class = "text-center">
-			<h3><%= tagline %></h3>
-		</div>
-	</div>
+	<%@ include file="footer.jsp" %>
 </body>
 </html>

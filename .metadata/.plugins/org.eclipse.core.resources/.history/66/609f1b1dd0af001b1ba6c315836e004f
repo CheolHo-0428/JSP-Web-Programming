@@ -1,0 +1,31 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="java.util.Date" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<% 
+		Date day = new Date();
+		String am_pm;
+		int hour = day.getHours();
+		int minute = day.getMinutes();
+		int second = day.getSeconds();
+	%>
+	
+	<div class = "container">
+		<div class = "text-center">
+			<h3><%= tagline %></h3>
+			<h7>현재 시각:</h7>
+		</div>
+	</div>
+	
+	
+	<footer class = "container">
+		<p>&copy; BookMarket</p>
+	</footer>
+</body>
+</html>
