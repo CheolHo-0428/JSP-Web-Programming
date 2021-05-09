@@ -1,0 +1,12 @@
+package ch04.com.dao;
+
+import java.io.Serializable;
+
+public class GuGuDan implements Serializable {
+	
+	public void process(int num) {
+		for(int i=1; i<10; i++) {
+			System.out.println(num + "*" + i + "=" + (num*i));
+		}
+	}
+}
